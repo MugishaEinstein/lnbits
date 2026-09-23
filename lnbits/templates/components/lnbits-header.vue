@@ -30,9 +30,18 @@
           <q-avatar v-if="g.settings.customLogo" height="30px">
             <img alt="Logo" :src="g.settings.customLogo" />
           </q-avatar>
-          <span v-else-if="g.settings.siteTitle == 'LNbits'"
-            ><strong>LN</strong>bits</span
+          <span
+            v-else-if="g.settings.siteTitle == 'Nostr Pay'"
+            class="row items-center no-wrap"
           >
+            <q-avatar size="30px" class="q-mr-sm">
+              <img
+                alt="Nostr Pay logo"
+                src="/static/images/logos/nostr-pay.svg"
+              />
+            </q-avatar>
+            <strong>Nostr</strong>&nbsp;Pay
+          </span>
           <span v-else v-text="g.settings.siteTitle"></span>
         </q-btn>
         <q-badge v-if="g.user && g.user.super_user">Super User</q-badge>

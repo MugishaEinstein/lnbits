@@ -8,7 +8,7 @@ window.PageAccount = {
       themeOptions: [
         {
           name: 'bitcoin',
-          color: 'deep-orange'
+          color: 'blue-8'
         },
         {
           name: 'classic',

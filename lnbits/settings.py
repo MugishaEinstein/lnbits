@@ -281,13 +281,15 @@ class ExchangeHistorySettings(LNbitsSettings):
 
 
 class ThemesSettings(LNbitsSettings):
-    lnbits_site_title: str = Field(default="LNbits")
-    lnbits_site_tagline: str = Field(default="free and open-source lightning wallet")
+    lnbits_site_title: str = Field(default="Nostr Pay")
+    lnbits_site_tagline: str = Field(
+        default="open-source bitcoin and Nostr payments"
+    )
     lnbits_site_description: str | None = Field(
-        default="The world's most powerful suite of bitcoin tools."
+        default="A simple, open-source wallet for bitcoin and Nostr payments."
     )
     lnbits_show_home_page_elements: bool = Field(default=True)
-    lnbits_default_wallet_name: str = Field(default="LNbits wallet")
+    lnbits_default_wallet_name: str = Field(default="Nostr Pay wallet")
 
     lnbits_wallet_featured_button_label: str | None = Field(default=None)
     lnbits_wallet_featured_button_url: str | None = Field(default=None)
@@ -309,7 +311,7 @@ class ThemesSettings(LNbitsSettings):
         ]
     )
     lnbits_custom_logo: str | None = Field(default=None)
-    lnbits_custom_image: str | None = Field(default="/static/images/logos/lnbits.svg")
+    lnbits_custom_image: str | None = Field(default="/static/images/logos/nostr-pay.svg")
     lnbits_ad_space_title: str = Field(default="Supported by")
     lnbits_ad_space: str = Field(
         default="https://shop.lnbits.com/;/static/images/bitcoin-shop-banner.png;/static/images/bitcoin-shop-banner.png,https://affil.trezor.io/aff_c?offer_id=169&aff_id=33845;/static/images/bitcoin-hardware-wallet.png;/static/images/bitcoin-hardware-wallet.png,https://firefish.io/?ref=lnbits;/static/images/firefish.png;/static/images/firefish.png"
@@ -317,7 +319,7 @@ class ThemesSettings(LNbitsSettings):
     lnbits_ad_space_enabled: bool = Field(default=False)
     lnbits_allowed_currencies: list[str] = Field(default=[])
     lnbits_default_accounting_currency: str | None = Field(default=None)
-    lnbits_qr_logo: str = Field(default="/static/images/favicon_qr_logo.png")
+    lnbits_qr_logo: str = Field(default="/static/images/logos/nostr-pay.svg")
     lnbits_apple_touch_icon: str | None = Field(default=None)
     lnbits_default_reaction: str = Field(default="confettiBothSides")
     lnbits_default_theme: str = Field(default="bitcoin")
